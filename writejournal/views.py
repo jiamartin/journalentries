@@ -1,9 +1,18 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView, CreateView
+from . models import Post
 
 
-def index(request):
-        return render(request, 'index.html', {})
+class indexView(ListView):
+        model = Post
+        template_name = 'index.html'
 
-def add(request):
-        return render(request, 'add.html', {})
+class entryView(DetailView):
+        model = Post
+        template_name = 'entry.html'
+
+class addView(CreateView):
+        model = Post
+        template_name = 'add.html'
+        fields = '__all__'
 

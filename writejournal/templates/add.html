@@ -11,10 +11,18 @@
 
                 <h3> Write a Journal Entry </h3>
 
-                <form>
-                    <div>
+                <form method="POST">
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+                    <!-- <div>
                         <label for="sampleInput"> Title </label>
                         <input class="h-full-width" type="text" placeholder="Title" id="sampleInput">
+                    </div>
+                    <div>
+                        <label for="sampleInput"> Title Tag </label>
+                        <input class="h-full-width" type="text" placeholder="Title tag" id="sampleInput">
                     </div>
                     <div>
                         <label for="sampleRecipientInput">Author</label>
@@ -28,9 +36,9 @@
                     </div>
                     
                     <label for="exampleMessage">Content</label>
-                    <textarea class="h-full-width" placeholder="Your message" id="exampleMessage"></textarea>
+                    <textarea class="h-full-width" placeholder="Your message" id="exampleMessage"></textarea> -->
 
-                    <input class="btn--primary h-full-width" type="submit" value="Submit">
+                    <button class="btn--primary h-full-width">Submit</button>
                 </form>
 
             </div>
