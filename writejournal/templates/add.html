@@ -1,0 +1,39 @@
+  
+{% extends 'base.html' %}
+{% block title %}Write Entry{% endblock %}
+{% block currentwrite %}current{% endblock %}
+
+{% block content %}
+
+        <div class="row">
+
+            <div class="column large-12 tab-full">
+
+                <h3> Write a Journal Entry </h3>
+
+                <form>
+                    <div>
+                        <label for="sampleInput"> Title </label>
+                        <input class="h-full-width" type="text" placeholder="Title" id="sampleInput">
+                    </div>
+                    <div>
+                        <label for="sampleRecipientInput">Author</label>
+                        <div class="ss-custom-select">
+                            <select class="h-full-width" id="sampleRecipientInput">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Report</option>
+                                <option value="Option 3">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <label for="exampleMessage">Content</label>
+                    <textarea class="h-full-width" placeholder="Your message" id="exampleMessage"></textarea>
+
+                    <input class="btn--primary h-full-width" type="submit" value="Submit">
+                </form>
+
+            </div>
+
+         
+{% endblock %}
