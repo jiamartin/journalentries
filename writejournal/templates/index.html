@@ -21,8 +21,8 @@
 
                         <div class="entry__meta">
                             <ul>
-                                <li>July 12, 2019</li>
-                                <li>{{ post.author.first_name }} {{ post.author.last_name }}</li>
+                                <li>{{ post.post_date }}</li>
+                                <li>By: {{ post.author.first_name }} {{ post.author.last_name }}</li>
                             </ul>
                         </div>
                      
@@ -30,7 +30,7 @@
                     
                     <div class="entry__content">
                         <p>
-                            {{ post.body }}
+                            {{ post.snippet }}
                         </p>
                     </div> 
 
