@@ -20,7 +20,7 @@
                                 <li>{{ post.post_date }}</li>
                                 <li>By: {{ post.author.first_name }} {{ post.author.last_name }}</li>
                                 <li><a href="{% url 'entry-edit' post.pk %}" title="" rel="category tag">Edit</a></li>
-                                <li><a href="#" title="" rel="category tag">Delete</a></li>
+                                <li><a href="{% url 'entry-delete' post.pk %}" title="" rel="category tag">Delete</a></li>
                             </ul>
                         </div>
                      
