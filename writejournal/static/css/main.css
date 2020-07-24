@@ -2293,7 +2293,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entry h2 a:hover, .entry h2 a:focus {
-    color: #000000;
+    color: #84be5b;
 }
 
 .entry__header {

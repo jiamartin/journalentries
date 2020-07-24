@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Edit Entry{% endblock %}
+
+{% block content %}
+
+        <div class="row">
+
+            <div class="column large-12 tab-full">
+
+                <h3> Edit Journal Entry </h3>
+
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.media }}
+                    {{ form.as_p }}
+
+                    <button class="btn--primary h-full-width">Submit</button>
+                </form>
+
+            </div>
+
+         
+{% endblock %}
